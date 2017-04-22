@@ -1,4 +1,4 @@
-if __name-- == "__main__":
+if __name__ == "__main__":
     info = input()
     info_split = info.split()
     num = round((float)(info_split[1])/(float)(info_split[2]),3)
