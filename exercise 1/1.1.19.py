@@ -5,8 +5,6 @@ def Fibonacci(N):
         current,after = after,(after+current)
     return current
 
-def main():
+if __name__ == "__main__":
     for N in range(0,101):
         print(str(N) +' '+ str(Fibonacci(N)))
-
-main()
