@@ -21,5 +21,6 @@ def recursive1(N, result):
 		result *= N
 		return recursive1(N-1, result)
 
-N = (float)(input())
-print (ln(recursive(N)))
+if __name__ == "__main__":
+	N = (float)(input())
+	print (ln(recursive(N)))
