@@ -12,7 +12,7 @@ def rank(key, list):
             lo = mid + 1
         else:
             return mid
-    return -1
+    return False
 
 
 with open(".../largeW.txt", "r") as src_file:
@@ -27,6 +27,6 @@ with open(".../largeW.txt", "r") as src_file:
             # if cmp_num not in src_list:
             #     print(cmp_num)
             # if cmp_num not in printed:
-            if rank(cmp_num, src_list) == -1:
+            if not rank(cmp_num, src_list):
                 # printed.append(cmp_num)
                 print(cmp_num)
