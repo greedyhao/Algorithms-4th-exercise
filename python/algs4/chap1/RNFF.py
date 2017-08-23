@@ -5,9 +5,5 @@
 def read_num_from_file(file):
     list_tmp = []
     for line in file:
-        tmp = line.split('\n')
-        del (tmp[1])
-        tmp = map(int, tmp)
-        list_tmp += tmp
+        list_tmp.append(list(map(int, line.split(',')))[0])
     return list_tmp
-
